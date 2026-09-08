@@ -11,9 +11,8 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-# Pull token from environment variable (Render environment setup)
-TOKEN = os.environ.get('8862637342:AAEM1uPKtBSMrSNsKXfy8wwLORPyd55Z7C0')
-
+# Hardcode your token directly here so it never fails to find it
+TOKEN = '8862637342:AAEM1uPKtBSMrSNsKXfy8wwLORPyd55Z7C0'
 def text_to_speech_khmer(text, chat_id):
     audio_path = f"audiobook_{chat_id}.mp3"
     
